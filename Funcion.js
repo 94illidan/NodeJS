@@ -1,13 +1,16 @@
-var N1 = 2;
+var N1 = 3;
 var N3 = 2;
 var N2 = 1;
 
 function add(N1, N2){
-	if (N1 == 3){
-		console.log('no es par');
+	var resultado;
+	if (N1 % 2 != 0){
+		resultado = 'no es par';
 	}else{
-		console.log('numero es par');
+		resultado = 'numero es par';
 	}
+return resultado;
 }
 
-console.log(add(N1,N3));
+
+console.log(add(N1,N2));
