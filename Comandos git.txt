@@ -3,6 +3,7 @@ Git add - subir nuevos js
 Git clone - bajarme lo que tengo en git a mi maquina local
 Git commit -m 'Mensaje de cambio'---comando para subir cambios a git
 Git push---- sube los cambios comiteados con el comando anterior a la nube de git
+Git status----saber estados de los archivos que posee mi repo
 
 
 #################
