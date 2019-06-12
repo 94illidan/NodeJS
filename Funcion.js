@@ -1,6 +1,6 @@
-var N1 = 3;
+var N1 = 2;
 var N3 = 2;
-var N2 = 1;
+var N2 = 2;
 
 function add(N1, N2){
 	var resultado;
