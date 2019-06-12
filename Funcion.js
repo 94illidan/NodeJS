@@ -1,5 +1,6 @@
 var N1 = 2;
 var N3 = 2;
+var N2 = 1;
 
 function add(N1, N2){
 	if (N1 == 3){
