@@ -1,12 +1,41 @@
-let edad = 20;
-let permiso_para_manejar = ["no tiene edad para manejar", "Tiene edad para manejar"];
-let nombre = prompt = ("di un nombre");
+/*---Video donde se muestra como hacer una pila--https://www.youtube.com/watch?v=FTGK47ndKJM
+    -----Video donde me muestra como hacer una clase---https://www.youtube.com/watch?v=puxoJpOl9TA
+*/
 
-if (edad < 18) {
-    permiso = permiso_para_manejar [0];
-    }else{
-    permiso = permiso_para_manejar [1];
+class Personas{
+    constructor(nombre, edad){
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+    Saludar(){
+        console.log(" hola, mi nombre es " + this.nombre + " y tengo " + this.edad);
+    }
 }
 
-console.log (permiso);
-console.log (nombre);
+let persona = new Personas ("Matias", 25);
+
+//console.log (gente.Saludar());
+
+class ubicacion{
+    constructor(pais,provincia){
+        this.pais = pais;
+        this.provincia = provincia;
+    }
+    Saludo2(){
+        console.log(" Vengo de " + this.pais + " en la localidad de " + this.provincia)
+    }
+}
+
+let locacion = new ubicacion ("Argentina", "Capital Federal");
+
+
+
+persona.Saludar() + locacion.Saludo2();
+
+
+/*
+---Tarea---
+y como tarea si te animas, que la persona tena un metodo:
+chocarLosCinco y que reciba como parametro otra persona e imprima: <nombre de una de las peronas> chocha los conco con <nombre de la persona que recibe por parametro>
+
+*/
