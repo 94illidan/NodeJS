@@ -13,7 +13,7 @@ processData ("Welcome to 30 Days of Code!")
 //-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*//
 /*
 int i;
-dobuble d;
+double d;
 String s;
 */
 
@@ -23,8 +23,9 @@ let s = "is the best place to learn and practice coding";
 
 let i2 = d + i;
 let d2 = d + d;
-let s2 = "Hackerrank " + s
-//let s2 =  
+let s2 = "Hackerrank " + s;
+
+
 console.log(i2);
 console.log(d2);
 console.log(s2);
