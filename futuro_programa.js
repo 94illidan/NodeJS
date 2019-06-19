@@ -28,12 +28,31 @@ class ubicacion{
 
 let locacion = new ubicacion ("Argentina", "Capital Federal");
 
-
-
 persona.Saludar() + locacion.Saludo2();
+//-**********************************************************************
+//--------------Otro-caso-de-clase-----------------------------------
+class Persona {
+    constructor() {
+      this.Nombre = 'Matias';
+    }
+   /* set name(name) {
+      this._name = name//.charAt(0).toUpperCase() + name.slice(1);
+    }
+    get name() {
+      return this._name;
+    }*/ //---------------averiguar-para-que-esto-------------------------------------
+    chocarLosCinco() {
+      console.log(this.Nombre + ' choca los cinco con ' + this.name + " y habla con " + this.name2);
+    }
+  }
+  
+  var personita = new Persona();
+  personita.name = 'Franco';
+  personita.name2 = 'Rocío';
+  personita.chocarLosCinco();
 
 
-/*
+ /*
 ---Tarea---
 y como tarea si te animas, que la persona tena un metodo:
 chocarLosCinco y que reciba como parametro otra persona e imprima: <nombre de una de las peronas> chocha los conco con <nombre de la persona que recibe por parametro>
