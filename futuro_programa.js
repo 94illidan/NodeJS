@@ -50,11 +50,24 @@ class Persona {
   personita.name = 'Franco';
   personita.name2 = 'Rocío';
   personita.chocarLosCinco();
+  
+//--------------------------------------Clases con IF dentro----------------------------------------
+class Prestamo{
+  constructor(){
+  }
+  Accion(){
+      if(this.edad >= 18 && this.edad < 100){
+          console.log ("Se le otorga el prestamo al propietario " + this.Nombre + " " + this.Apellido + " firmado por el Banco" );
+      }else{
+          console.log("No se otorga el beneficio debido a que la persona solicitante de un prestamo posee " + this.edad);
+      }
+  }
+}
 
 
- /*
----Tarea---
-y como tarea si te animas, que la persona tena un metodo:
-chocarLosCinco y que reciba como parametro otra persona e imprima: <nombre de una de las peronas> chocha los conco con <nombre de la persona que recibe por parametro>
 
-*/
+let acceso = new Prestamo();
+acceso.edad = 99;
+acceso.Nombre = "Matias";
+acceso.Apellido = "Fernandez Miranda";
+acceso.Accion();
