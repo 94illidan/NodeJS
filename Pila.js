@@ -3,10 +3,13 @@ class stack{
 
     }
     Pila1(){
-            console.log ("numero " + pilas.dato1);
+        while (this.pilas = null){
+            this.Pila1 = dato1
+            this.datos + 1
+            console.log ("numero" +this.Pila1);
         }
     }
-
+}
 
 
 
@@ -17,4 +20,3 @@ pilas.dato3 = 3
 pilas.dato4 = 4
 pilas.dato5 = 5
 pilas.Pila1();
-
