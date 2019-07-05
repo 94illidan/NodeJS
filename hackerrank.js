@@ -12,9 +12,9 @@ processData ("Welcome to 30 Days of Code!")
 
 //-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*//
 /*
-int i;
-double d;
-String s;
+int.i;
+double.d;
+String.s;
 */
 
 let i = 12;

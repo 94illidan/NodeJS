@@ -1,5 +1,7 @@
 
-//video de youtube ----https://www.youtube.com/watch?v=VuMqkdX8Ze0
+//video de youtube ----https://www.youtube.com/watch?v=VuMqkdX8Ze0-- basico
+
+//continuacion de arriba -- https://www.youtube.com/watch?v=2DFDhOD670s
 
 //para borrar varias posiciones -----var3.splice(posiciones, psicones)
 // se utiliza POP para buscar el ultimo registro "IMPORTANTE"
@@ -20,23 +22,59 @@ for(i = 0; i < var1.length; i++){
 
 */
 
-let pila = new Array();
+//6 3 1 4 2 5
 
-pila = [2,5,6,1];
-//pos   0 1 2 3 
-pila.sort()
 
-e = 1
+pila = [3, 6, 1, 4, 2, 5];
+//      0  1  2  3  4  5
 
-/*for(i = 0; i < pila.length; i++){
-    if (pila[i] >= pila[e] ){
-        pila[i] = pila[e];
-        pila[e] = pila[i];
+
+// tengo 6 psoicones
+// el primero es mayor al 2
+//     si cambiarlo
+//     no dejarlo y pasarlo a la siguiente posicion
+
+i = 0;//primera posicion
+e = 1;//segunda posicion
+d = 0;//lugar donde guardas la primera posicion
+j = 0;//cantidad de veces que verfica la pila
+
+while (j < pila.length){
+    for (i = 0; i < pila.length; i++, e++){
+        if (pila[i] >= pila[e]){
+            d = pila[e];
+            pila[e] = pila[i];
+            pila[i] = d;
+        }
+        console.log ("Variable_I", i, "Variable_E", e);
+        console.log (pila);
     }
-    e++;
+    j++
+    console.log ("variable_J" , j);
 }
-*/
+
+//console.log (pila);
 
 
-console.log(pila);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// pila.sort()
+// console.log (i);
+// console.log (pila);
+
+// console.log(pila[pila.length -5]);
