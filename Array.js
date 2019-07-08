@@ -25,35 +25,35 @@ for(i = 0; i < var1.length; i++){
 //6 3 1 4 2 5
 
 
-pila = [3, 6, 1, 4, 2, 5];
+pila = [3, 6, 1, 4, 2, 5]; //Numerico
+//pila = ["aa", "aab", "aad", "aac", "aat", "aat"]; //alfanumerico
+
 //      0  1  2  3  4  5
 
-
-// tengo 6 psoicones
-// el primero es mayor al 2
-//     si cambiarlo
-//     no dejarlo y pasarlo a la siguiente posicion
 
 i = 0;//primera posicion
 e = 1;//segunda posicion
 d = 0;//lugar donde guardas la primera posicion
 j = 0;//cantidad de veces que verfica la pila
 
+
+console.log (pila);
+
 while (j < pila.length){
-    for (i = 0; i < pila.length; i++, e++){
+    for (i = 0, e = 1; i < pila.length; i++, e++){
         if (pila[i] >= pila[e]){
             d = pila[e];
             pila[e] = pila[i];
             pila[i] = d;
         }
-        console.log ("Variable_I", i, "Variable_E", e);
-        console.log (pila);
+        //console.log ("Variable_I", i, "Variable_E", e);
+        //console.log (pila);
     }
     j++
-    console.log ("variable_J" , j);
+    //console.log ("variable_J" , j);
 }
 
-//console.log (pila);
+console.log (pila);
 
 
 
