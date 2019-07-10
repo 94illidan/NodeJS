@@ -61,8 +61,30 @@ for(i = 0; i < var1.length; i++){
 
 //***********************Array*MatiP**********************************/
 
-pila = [3, 6, 1, 4, 2, 5]; //Numerico
-//pila = ["aa", "aab", "aad", "aac", "aat", "aat"]; //alfanumerico
+
+//*********************cargar*array*de*forma*aleatoria****************/
+
+pila = []
+let cantidadArray = Math.floor(Math.random() * Math.floor(15)) + 3;
+
+for(let i = 0; i <= cantidadArray; i++){
+    pila[i] = Math.floor(Math.random() * Math.floor(10)) ;
+}
+
+console.log (pila);
+
+//*********************cargar*array*de*forma*aleatoria****************/
+
+
+pila = []
+
+let cantidadArray = Math.floor(Math.random() * Math.floor(15)) + 3;
+
+for(let i = 0; i <= cantidadArray; i++){
+    pila[i] = Math.floor(Math.random() * Math.floor(10)) ;
+}
+
+console.log (pila);
 
 //      0  1  2  3  4  5
 
@@ -91,5 +113,26 @@ while (j < pila.length){
 
 console.log (pila);
 
+//****************************************/
 
+// elArray = Math.floor(Math.random() * Math.floor(15))
 
+// for (let i = 0; i <= elArray.length - 2 ; i++) {
+
+//     console.log();
+
+//         for (let j = i + 1; j <= elArray.length - 1; j++) {
+
+//             console.log(`[${elArray}]: elArray[${i}]: ${elArray[i]} < elArray[${j}]: ${elArray[j]} (${elArray[i] < elArray[j]})`);
+
+//                 if(elArray[i] < elArray[j]){
+
+//                     auxiliar = elArray[j];
+//                     elArray[j] = elArray[i];
+//                     elArray[i] = auxiliar;
+
+//                 }
+//             }
+// }
+// console.log();
+// console.log(elArray);
