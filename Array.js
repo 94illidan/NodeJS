@@ -22,8 +22,44 @@ for(i = 0; i < var1.length; i++){
 
 */
 
-//6 3 1 4 2 5
 
+// pila.sort()
+// console.log (i);
+// console.log (pila);
+
+// console.log(pila[pila.length -5]);
+
+//***********************Array*MatiP**********************************/
+// let x = 0;
+// let j = 0;
+// let pila = [];
+// let cantidadArray = Math.floor(Math.random() * Math.floor(15)) + 3;
+
+// for(let i = 0; i <= cantidadArray; i++){
+//     pila[i] = Math.floor(Math.random() * Math.floor(10)) ;
+// }
+
+// console.log(`Pila inicial: ${ pila }`);
+
+// while (j < pila.length){
+//     for (i = 0, e = 1; i < pila.length -1, e < pila.length; i++, e++){
+//         x++;
+
+//         console.log(`Ciclo ${ x }. Pila: ${ pila }. ${pila[i]} >= ${pila[e]}`);
+
+//         if (pila[i] >= pila[e]){
+//             d = pila[e];
+//             pila[e] = pila[i];
+//             pila[i] = d;
+//         }
+
+//     }
+//     j++
+//     //console.log ("variable_J" , j);
+// }
+// console.log(pila);
+
+//***********************Array*MatiP**********************************/
 
 pila = [3, 6, 1, 4, 2, 5]; //Numerico
 //pila = ["aa", "aab", "aad", "aac", "aat", "aat"]; //alfanumerico
@@ -40,13 +76,13 @@ j = 0;//cantidad de veces que verfica la pila
 console.log (pila);
 
 while (j < pila.length){
-    for (i = 0, e = 1; i < pila.length; i++, e++){
+    for (i = 0, e = 1; i < pila.length -1, e < pila.length; i++, e++){
         if (pila[i] >= pila[e]){
             d = pila[e];
             pila[e] = pila[i];
             pila[i] = d;
         }
-        //console.log ("Variable_I", i, "Variable_E", e);
+        //console.log ("Ciclo_I", i, "Ciclo_E", e);
         //console.log (pila);
     }
     j++
@@ -57,24 +93,3 @@ console.log (pila);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// pila.sort()
-// console.log (i);
-// console.log (pila);
-
-// console.log(pila[pila.length -5]);
